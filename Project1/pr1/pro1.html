@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change background</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/Project1/pr1/pro1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="/Project1/home/index.html">Home</a>
+        <a href="">Youtube channel</a>
+    </nav>
+
+    <div class="canvas">
+
+        <h1>Chnage Color Schema</h1>
+
+        <span class="cop" id="gray"></span>
+        <span class="cop" id="white"></span>
+        <span class="cop" id="green"></span>
+        <span class="cop" id="pink"></span>
+
+        <h1>Nothing is Impossible in life.</h1>
+        <h2>You just have to move your first step</h2>
+        <hr style="margin-bottom: 20px; margin-top: 10px;">
+
+
+        <h2>Best of luck for the next project</h2>
+
+
+    </div>
+
+
+</body>
+<script>
+    const body = document.querySelector('body')
+    const colorPalette = document.querySelectorAll('.cop')
+    const hh = document.querySelectorAll('h1')
+    const hh2 = document.querySelectorAll('h2')
+
+    console.log(colorPalette);
+
+    colorPalette.forEach((cp) => {
+        console.log(cp);
+
+        cp.addEventListener('click', function (event) {
+            // console.log(event);
+            console.log(event.target.id);
+
+            if (event.target.id === 'pink') {
+                body.style.backgroundColor = event.target.id
+                hh.forEach((h)=>{
+                    h.style.color='black'
+                })
+                hh2.forEach((h)=>{
+                    h.style.color='black'
+                })
+            }
+            if (event.target.id === 'white') {
+                body.style.backgroundColor = event.target.id
+                hh.forEach((h)=>{
+                    h.style.color='black'
+                })
+                hh2.forEach((h)=>{
+                    h.style.color='black'
+                })
+            }
+            if (event.target.id === 'green') {
+                body.style.backgroundColor = event.target.id
+                hh.forEach((h)=>{
+                    h.style.color='white'
+                })
+                hh2.forEach((h)=>{
+                    h.style.color='white'
+                })
+            }
+            if (event.target.id === 'gray') {
+                body.style.backgroundColor = event.target.id
+                hh.forEach((h)=>{
+                    h.style.color='white'
+                })
+                hh2.forEach((h)=>{
+                    h.style.color='white'
+                })
+            }
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(55, 55, 55);
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+nav a{
+    display: inline-block;
+    margin: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+#container{
+    background-color: rgb(90, 4, 4);
+    color: rgb(149, 151, 241);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+.clock-box{
+    height: 40px;
+    width: auto;
+    background-color: rgb(149, 151, 241);
+    border-radius: 8px;
+    color: rgb(90, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1, .clock-box{
+    margin: 10px;
+}
